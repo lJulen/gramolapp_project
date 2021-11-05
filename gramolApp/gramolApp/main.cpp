@@ -8,27 +8,60 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+void registrarCancion()
+{
+    cout << "Has seleccionado la opción 1";
+}
+
+void escucharCancion()
+{
+    
+}
+
+void informacionArtista()
+{
+    
+}
+
+int main(int argc, const char * argv[])
+{
     // insert code here...
     cout << "Pulse un número para acceder al menú correspondiente" << endl;
-    // La opción 1 enviará a un link en youtube que ejecutará y se escuchará la canción
-    cout << "1 - Escuchar canción" << endl;
+    // La opción 1 permitirá registrar una canción.
+    cout << "1 - Registrar canción" << endl;
     
-    // La segunda opción permitirá registrar una canción.
-    cout << "2 - Registrar canción" << endl;
+    // La segunda opción enviará a un link en youtube que ejecutará y se escuchará la canción.
+    cout << "2 - Escuchar canción" << endl;
     
-    // La tercera opción muestra en pantalla la información relativa al artista
+    // La tercera opción muestra en pantalla la información relativa al artista.
     cout << "3 - Información artistas" << endl;
     
     cout << "4 - Salir" << endl;
-    
-    // El usuario marca una opción para ir al menú adecuado
+    // El usuario marca una opción para ir al menú adecuado.
     int eleccion;
     cin >> eleccion;
+
     do
     {
-        
-    }while(eleccion !=4);
+        switch (eleccion) {
+            case 1:
+                registrarCancion();
+                break;
+            case 2:
+                escucharCancion();
+                break;
+            case 3:
+                informacionArtista();
+                break;
+            case 4:
+                cout << "Has seleccionado salir de la aplicación" << endl;
+                break;
+            default:
+                cout << "Inserta un número válido" << endl;
+                cin >> eleccion;
+                break;
+        }
+    }while(eleccion != 4);
     
     return 0;
 }
