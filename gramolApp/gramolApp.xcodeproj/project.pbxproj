@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA4C8832736694400AA9F50 /* menuApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4C8812736694400AA9F50 /* menuApp.cpp */; };
 		2CA754142735877500CD2B1B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA754132735877500CD2B1B /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2CA4C8812736694400AA9F50 /* menuApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menuApp.cpp; sourceTree = "<group>"; };
+		2CA4C8822736694400AA9F50 /* menuApp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = menuApp.hpp; sourceTree = "<group>"; };
 		2CA754102735877500CD2B1B /* gramolApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gramolApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA754132735877500CD2B1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				2CA754132735877500CD2B1B /* main.cpp */,
+				2CA4C8812736694400AA9F50 /* menuApp.cpp */,
+				2CA4C8822736694400AA9F50 /* menuApp.hpp */,
 			);
 			path = gramolApp;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA754142735877500CD2B1B /* main.cpp in Sources */,
+				2CA4C8832736694400AA9F50 /* menuApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
