@@ -7,12 +7,43 @@
 
 #include "menuApp.hpp"
 #include <iostream>
+#include "songClass.hpp"
+#include <ctime>
 
 using namespace std;
 
 void registrarCancion()
 {
+    string nameSong;
+    float duration;
+    string urlSong;
+    time_t incorporationDate;
+    int score;
     cout << "Has seleccionado la opción 1" << endl;
+    
+    cout << "Inserte el nombre de la canción" << endl;
+    cin >> nameSong;
+    
+    cout << "Inserte la duración" << endl;
+    cin >> duration;
+    
+    cout << "Inserte la URL" << endl;
+    cin >> urlSong;
+    
+    cout << "Inserte la fecha de incorporación" << endl;
+    cin >> incorporationDate;
+    
+    //do
+    //{
+        cout << "Inserte la puntuación (entre 0 y 10)" << endl;
+        
+        cin >> score;
+    //}while (score <0 && score > 10);
+    
+    Song cancion(nameSong, duration, incorporationDate, urlSong, score);
+    
+    cout << cancion.getNameSong() << endl;
+    
 }
 
 void escucharCancion()
